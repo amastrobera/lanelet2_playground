@@ -7,6 +7,15 @@ This repo contains an an environment to develop with Lanelet2 and all its ancill
 
 Install Docker for [Windows](https://docs.docker.com/docker-for-windows/install/) or [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/). Then, follow the instructions below. 
 
+Download the repo as:
+
+```
+git clone --recursive https://github.com/amastrobera/lanelet2_playground.git
+cd lanelet2_playground
+git submodule foreach "git checkout master"
+```
+
+
 ```
 cd ../docker
 ./build.sh                  # create the dev env
