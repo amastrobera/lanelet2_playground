@@ -15,6 +15,9 @@ cd lanelet2_playground
 git submodule foreach "git checkout master"
 ```
 
+Install JOSM with the instructions on their [site](https://wiki.openstreetmap.org/wiki/JOSM). You will use it to open or create files to work in the dev env. 
+
+Run the image and go in the dev env.
 
 ```
 cd ../docker
