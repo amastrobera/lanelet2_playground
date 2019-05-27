@@ -7,7 +7,7 @@ do
 done
 
 
-set swd="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+set swd=%~dp0
 set img=lanelet2-playground
 
 echo "Starting container %img% ..."
