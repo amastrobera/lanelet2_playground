@@ -7,10 +7,10 @@ do
 done
 
 
-echo "Starting container ppavp-map-lanelet2..."
-
 swd="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 img=lanelet2-playground
+
+echo "Starting container $img ..."
 
 docker run \
       -it \

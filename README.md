@@ -26,6 +26,9 @@ cd ../docker
 source setup_lanenet2.sh    # build lanelet2 and save python libraries
 ```
 
+If you have *windows*, use the same instructions from the cmd, using instead `build_windows.bat` and `run_windows.bat`.
+
+
 If you see no errors and you can execute `python -c "from lanelet2.core import LaneletMap"` then all went well :)
 
 
