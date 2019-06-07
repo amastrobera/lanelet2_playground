@@ -31,6 +31,7 @@ RUN apt-get update && apt-get install -y \
             ros-kinetic-catkin \
             ros-kinetic-rosbash \
             ros-kinetic-ros-environment \
+            libgdal-dev \
         && apt-get clean && sudo rm -rf /var/lib/apt/lists/*
 
 # Python specific
@@ -54,7 +55,7 @@ RUN  mkdir -p /home/developer/workspace \
             /home/developer/workspace/src/mrt_cmake_modules
 
 # Jupyter notebook requirements
-RUN sudo pip3 install virtualenv \
+RUN sudo pip3 install virtualenv pygdal==1.11.3.3 shapely \
     && mkdir -p /home/developer/pyenv \
     && virtualenv -p python3 /home/developer/pyenv \
     && virtualenv -p python2 /home/developer/pyenv
